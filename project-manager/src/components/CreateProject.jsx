@@ -2,13 +2,13 @@ import React from 'react'
 import { Button, Card } from 'react-bootstrap'
 import { Row, Col } from 'react-flexa'
 
-const CreateProject = () => {
+const CreateProject = ({ toggleModal }) => {
     return (
         <Card style={{ width: 230, height: 150 }}>
             <Card.Body>
-                <Col justifyContent="center">
+                <Col>
                     <Row justifyContent="center">
-                        <Button style={{ marginTop: '15%' }}>Create project</Button>
+                        <Button style={{ marginTop: '15%' }} onClick={toggleModal}>Create project</Button>
                     </Row>
                 </Col>
             </Card.Body>
