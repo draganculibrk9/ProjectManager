@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getProjects } from '../reducers/projectReducer'
 import ProjectPreview from './ProjectPreview'
 import { Row, Col } from 'react-flexa'
-import AddProject from './AddProject'
+import CreateProject from './CreateProject'
 
 const Projects = () => {
     const dispatch = useDispatch()
@@ -24,7 +24,7 @@ const Projects = () => {
                 )
             }
             <Col>
-                <AddProject/>
+                <CreateProject/>
             </Col>
         </Row>
     )
