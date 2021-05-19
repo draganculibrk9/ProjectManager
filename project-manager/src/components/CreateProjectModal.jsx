@@ -4,12 +4,12 @@ import CreateProjectForm from './CreateProjectForm'
 
 const CreateProjectModal = ({ visible, toggle }) => {
     return (
-        <Modal show={visible} onHide={toggle}>
+        <Modal show={visible} onHide={toggle} size="xl">
             <Modal.Header closeButton>
                 <Modal.Title>Create project</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <CreateProjectForm/>
+                <CreateProjectForm toggleModal={toggle}/>
             </Modal.Body>
         </Modal>
     )
