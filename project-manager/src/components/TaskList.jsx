@@ -6,7 +6,7 @@ const TaskList = ({ tasks }) => (
     <Tab.Container>
         <Row>
             <Col sm={4}>
-                <ListGroup>
+                <ListGroup className='task-links'>
                     {
                         tasks.map(task =>
                             <ListGroup.Item key={task.id} action href={`#${task.id}`}>
@@ -20,7 +20,7 @@ const TaskList = ({ tasks }) => (
                 <Tab.Content>
                     {
                         tasks.map(task =>
-                            <Tab.Pane key={task.id} eventKey={`#${task.id}`}>
+                            <Tab.Pane className='task-pane' key={task.id} eventKey={`#${task.id}`}>
                                 <Task
                                     name={task.name}
                                     creation_date={task.creation_date}
