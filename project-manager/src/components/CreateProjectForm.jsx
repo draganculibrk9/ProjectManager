@@ -156,11 +156,15 @@ const CreateProjectForm = ({ toggleModal }) => {
                                                     </Form.Control.Feedback>
                                                 </Col>
                                             </Form.Group>
-                                            <Button type="button" onClick={() => submitAndResetTaskForm(subformik, formik)} variant='secondary'>Add task</Button>
+                                            <Row>
+                                                <Button type="button" onClick={() => submitAndResetTaskForm(subformik, formik)} variant='secondary'>Add task</Button>
+                                            </Row>
                                         </div>
                                     )}
                             </Formik>
-                            <Button type="button" onClick={() => formik.submitForm()}>Create project</Button>
+                            <Row style={{ marginTop: '1%' }}>
+                                <Button type="button" onClick={() => formik.submitForm()}>Create project</Button>
+                            </Row>
                         </Form>
                     )}
                 </Formik>
